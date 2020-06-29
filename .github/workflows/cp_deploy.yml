@@ -29,4 +29,4 @@ jobs:
     - name: Install Surge
       run: npm install -g surge
     - name: Run Surge
-      run: surge ./ techahsan-quotes.surge.sh/ --token ${{secrets.CLIP_PATH_TOKEN}}
+      run: surge ./build http://ahsantechquotes.surge.sh --token ${{ secrets.CLIP_PATH_TOKEN}}
